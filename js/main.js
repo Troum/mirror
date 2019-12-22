@@ -56,9 +56,6 @@ $().ready(function () {
       images.push(`img/frames/frame-${i}.png`)
     }
     tl
-      .set('#image-container', {
-        x: '30%'
-      })
       .set('.title-container', {
         x: '10%'
       })

@@ -8,6 +8,10 @@ body {
   height: calc(100vh - 60px);
 }
 
+#image-container {
+  transform: translate(30%, 0);
+}
+
 .greeting1, .greeting2 {
   font-size: 4rem;
   font-weight: 600;
