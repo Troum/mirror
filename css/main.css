@@ -8,12 +8,6 @@ body {
   height: calc(100vh - 60px);
 }
 
-.title-container {
-  position: absolute;
-  top: 20%;
-  left: 2%;
-}
-
 .greeting1, .greeting2 {
   font-size: 4rem;
   font-weight: 600;
@@ -36,12 +30,40 @@ body {
   content: url("../img/bulletpoint.svg");
 }
 
+@media (max-width: 768px) {
+  .title-container {
+    position: relative;
+    line-height: 2.2rem;
+  }
+  .greeting1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .greeting2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .slogan {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+}
+
 @media (min-width: 1200px) {
   #container {
     height: 100vh;
   }
 
   .title-container {
+    position: absolute;
     max-width: 60%;
     line-height: 6.3rem;
   }
@@ -65,6 +87,7 @@ body {
   }
 
   .title-container {
+    position: absolute;
     max-width: 50%;
     line-height: 6.7rem;
   }
