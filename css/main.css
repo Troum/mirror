@@ -1,0 +1,80 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  overflow-x: hidden;
+}
+
+#container {
+  height: calc(100vh - 60px);
+}
+
+.title-container {
+  position: absolute;
+  max-width: 60%;
+  top: 20%;
+  left: 2%;
+}
+
+.greeting1, .greeting2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.greeting2 {
+  opacity: 0;
+}
+
+.slogan {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #ccc;
+}
+.slogan::before {
+  display: inline-block;
+  width: 13px;
+  height: 18px;
+  content: url("../img/bulletpoint.svg");
+}
+
+@media (min-width: 1200px) {
+  #container {
+    height: 100vh;
+  }
+
+  .title-container {
+    line-height: 6.3rem;
+  }
+
+  .greeting1 {
+    font-size: 6.5rem;
+    font-weight: 600;
+  }
+
+  .greeting2 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  #container {
+    height: calc(100vh - 60px);
+  }
+
+  .title-container {
+    line-height: 4.2rem;
+  }
+
+  .greeting1 {
+    font-size: 6.5rem;
+    font-weight: 600;
+  }
+
+  .greeting2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+}

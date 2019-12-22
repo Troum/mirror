@@ -1,0 +1,25 @@
+{
+  "name": "anima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "gsap": "^3.0.4",
+    "jquery": "^3.4.1",
+    "modernizr": "^3.8.0",
+    "path": "^0.12.7",
+    "scrollmagic": "^2.0.7"
+  }
+}
