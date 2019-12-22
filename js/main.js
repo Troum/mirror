@@ -17,7 +17,7 @@ $().ready(function () {
       x: '10%'
     })
     .to('#image-container', 3, {
-      x: '-30%'
+      x: '-40%'
     })
     .to('.title-container', 2, {
       x: '70%'
