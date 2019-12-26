@@ -5,11 +5,15 @@ $().ready(function () {
 
   let tl = new TimelineMax();
   let controller = new ScrollMagic.Controller();
+  let image = new Image();
   if (isMobile) {
     $('#frame').attr('src', 'img/frames/mobile/frame-1.png');
     for (let i = 1; i < 137; i++) {
-      images.push(`img/frames/mobile/frame-${i}.png`)
+      images.push(`img/frames/mobile/frame-${i}.png`);
     }
+    images.forEach(item => {
+      image.src = item
+    });
     tl
       .set('.greeting2', {
         translateY: -100
@@ -55,6 +59,9 @@ $().ready(function () {
     for (let i = 1; i < 137; i++) {
       images.push(`img/frames/frame-${i}.png`)
     }
+    images.forEach(item => {
+      image.src = item
+    });
     tl
       .set('.title-container', {
         x: '10%'
